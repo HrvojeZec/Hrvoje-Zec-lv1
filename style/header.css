@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    position: relative;
+max-width: 100%;
+
+        height: 10vh;
+    background: #FFFFFF;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+max-width: 100%;
+    height: 52px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.image {
+    width: 120px;
+    height: 26px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 42.67px;
+    width: 100%;
+    height: auto;
+}
+
+.nav a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    text-decoration: none;
+    border-bottom: none;
+    color: #0F1221;
+}
+
+.button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #5E3BEE;
+    border-radius: 4px;
+    color: #5E3BEE;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+ padding: 133.333px 85.3333px;
+        height: 120px;
+    }
+
+    .container {
+        gap: 32px;
+        height: 72px;
+    }
+
+    .image {
+        width: 140px;
+        height: 30px;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 24px;
+    }
+
+    nav>* {
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+
+    .button {
+        padding: 12px 24px;
+        width: 148px;
+        height: 52px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding: 0 64px;
+    }
+
+    .container {
+        gap: 48px;
+        height: 96px;
+    }
+
+    .image {
+        width: 160px;
+        height: 34px;
+    }
+
+    .nav a {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .button {
+        padding: 14px 32px;
+        width: 168px;
+        height: 56px;
+        font-size: 18px;
+    }
+}
